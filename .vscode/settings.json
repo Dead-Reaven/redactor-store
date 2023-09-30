@@ -1,6 +1,7 @@
 {
-	"workbench.colorTheme": "One Dark Pro",
-	"path-intellisense.mappings": {
-		"@": "${workspaceFolder}/src"
-	}
+  "workbench.colorTheme": "One Dark Pro",
+  "path-intellisense.mappings": {
+    "@": "${workspaceFolder}/src"
+  },
+  "editor.formatOnSave": true
 }
