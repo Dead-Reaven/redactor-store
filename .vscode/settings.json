@@ -3,5 +3,4 @@
   "path-intellisense.mappings": {
     "@": "${workspaceFolder}/src"
   },
-  "editor.formatOnSave": true
 }
