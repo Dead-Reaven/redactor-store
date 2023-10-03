@@ -7,7 +7,7 @@
     <!-- catalog container -->
     <div class="grid">
       <div v-for="(product, index) in catalog" :key="index">
-        <div v-if="product">
+        <div>
           {{ product.title }}
         </div>
       </div>
@@ -18,7 +18,6 @@
 <script setup lang="ts">
   import { storeToRefs } from 'pinia'
   import { useStore } from '@/store/store.ts'
-  
   const { catalog } = storeToRefs(useStore())
 </script>
 
