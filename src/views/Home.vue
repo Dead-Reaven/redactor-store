@@ -1,5 +1,5 @@
 <template>
-	<div class="flex-auto">Home</div>
+  <div class="container flex-auto">Home</div>
 </template>
 
 <script setup lang="ts"></script>

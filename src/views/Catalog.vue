@@ -1,11 +1,25 @@
 <template>
-	<div class="flex-auto"></div>
+  <div class="container flex flex-auto gap-[30px] p-5">
+    <!-- filters container -->
+    <div class="flex flex-col gap-3">
+      <h2>filters</h2>
+    </div>
+    <!-- catalog container -->
+    <div class="grid">
+      <div v-for="(product, index) in catalog" :key="index">
+        <div v-if="product">
+          {{ product.title }}
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script setup lang="ts">
-	import { useStore } from '@/store/store.ts'
-	const state = useStore()
-	state.showState()
+  import { storeToRefs } from 'pinia'
+  import { useStore } from '@/store/store.ts'
+  
+  const { catalog } = storeToRefs(useStore())
 </script>
 
 <style scoped></style>

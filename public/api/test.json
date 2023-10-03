@@ -1,0 +1,102 @@
+[
+  {
+    "name": "Cotton T-Shirt",
+    "price": 19.99,
+    "size": "Medium",
+    "description": "A comfortable and stylish cotton t-shirt.",
+    "color": "Red",
+    "material": "100% Cotton",
+    "imgs": ["image1.jpg", "image2.jpg", "image3.jpg"],
+    "id": 1
+  },
+  {
+    "name": "Slim Fit Jeans",
+    "price": 39.99,
+    "size": "32W x 34L",
+    "description": "Classic slim fit jeans for a stylish look.",
+    "color": "Blue",
+    "material": "98% Cotton, 2% Spandex",
+    "imgs": ["image4.jpg", "image5.jpg", "image6.jpg"],
+    "id": 2
+  },
+  {
+    "name": "Hooded Sweatshirt",
+    "price": 29.99,
+    "size": "Large",
+    "description": "A warm and cozy hooded sweatshirt for cold days.",
+    "color": "Gray",
+    "material": "80% Cotton, 20% Polyester",
+    "imgs": ["image7.jpg", "image8.jpg", "image9.jpg"],
+    "id": 3
+  },
+  {
+    "name": "Summer Dress",
+    "price": 49.99,
+    "size": "Small",
+    "description": "A beautiful summer dress for any occasion.",
+    "color": "Yellow",
+    "material": "100% Polyester",
+    "imgs": ["image10.jpg", "image11.jpg", "image12.jpg"],
+    "id": 4
+  },
+  {
+    "name": "Leather Jacket",
+    "price": 79.99,
+    "size": "Medium",
+    "description": "A classic leather jacket for a timeless look.",
+    "color": "Black",
+    "material": "Genuine Leather",
+    "imgs": ["image13.jpg", "image14.jpg", "image15.jpg"],
+    "id": 5
+  },
+  {
+    "name": "Printed T-Shirt",
+    "price": 24.99,
+    "size": "Large",
+    "description": "A trendy printed t-shirt with unique designs.",
+    "color": "White",
+    "material": "100% Cotton",
+    "imgs": ["image16.jpg", "image17.jpg", "image18.jpg"],
+    "id": 6
+  },
+  {
+    "name": "Athletic Shorts",
+    "price": 14.99,
+    "size": "Medium",
+    "description": "Comfortable athletic shorts for workouts and sports.",
+    "color": "Blue",
+    "material": "Polyester",
+    "imgs": ["image19.jpg", "image20.jpg", "image21.jpg"],
+    "id": 7
+  },
+  {
+    "name": "Denim Skirt",
+    "price": 34.99,
+    "size": "28W",
+    "description": "A stylish denim skirt for a casual look.",
+    "color": "Indigo",
+    "material": "100% Cotton",
+    "imgs": ["image22.jpg", "image23.jpg", "image24.jpg"],
+    "id": 8
+  },
+  {
+    "name": "Formal Suit",
+    "price": 129.99,
+    "size": "42R",
+    "description": "An elegant formal suit for special occasions.",
+    "color": "Navy Blue",
+    "material": "Polyester-Viscose Blend",
+    "imgs": ["image25.jpg", "image26.jpg", "image27.jpg"],
+    "id": 9
+  },
+  {
+    "name": "Sneakers",
+    "price": 59.99,
+    "size": "9",
+    "description": "Comfortable and stylish sneakers for everyday wear.",
+    "color": "White",
+    "material": "Canvas",
+    "imgs": ["image28.jpg", "image29.jpg", "image30.jpg"],
+    "id": 10
+  }
+]
