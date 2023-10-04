@@ -6,7 +6,7 @@
     </div>
     <!-- catalog container -->
     <div class="grid">
-      <div v-for="(product, index) in catalog" :key="index">
+      <div v-for="(product, index) in catalogState" :key="index">
         <div>
           {{ product.title }}
         </div>
@@ -18,7 +18,8 @@
 <script setup lang="ts">
   import { storeToRefs } from 'pinia'
   import { useStore } from '@/store/store.ts'
-  const { catalog } = storeToRefs(useStore())
+  const store = useStore()
+  const { catalogState } = storeToRefs(store)
 </script>
 
 <style scoped></style>

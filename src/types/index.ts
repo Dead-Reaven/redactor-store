@@ -11,4 +11,7 @@ type ProductTypes = {
   title: string
 }
 
-export default ProductTypes
+type CatalogTypes = Array<ProductTypes>
+type ShoppingCardTypes = Array<ProductTypes['id']>
+
+export type { ProductTypes, CatalogTypes, ShoppingCardTypes }

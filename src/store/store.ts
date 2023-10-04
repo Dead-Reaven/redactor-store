@@ -1,26 +1,30 @@
 import { defineStore } from 'pinia'
-import { useQuery } from '@tanstack/vue-query'
-// import { useAsyncState } from '@vueuse/core'
-import { computed, onMounted, reactive, ref, watchEffect } from 'vue'
-import { fetcher } from './api/fetcher'
-import ProductTypes from '@/types'
+import { ref } from 'vue'
+import { useAsyncState } from '@vueuse/core'
+import { fetcher } from '@/api'
+import { CatalogTypes } from '@/types'
 
-type CatalogTypes = Array<ProductTypes>
-type ShoppingCardTypes = Array<ProductTypes['id']>
+const catalogInitialState: CatalogTypes = []
+const URL = 'https://jsonplaceholder.typicode.com/posts'
 
 export const useStore = defineStore('store', () => {
-  const catalog = ref<CatalogTypes>([])
-  // const shoppingCard = ref<ShoppingCardTypes>([])
+  //* state
+  const catalogState = ref(catalogInitialState)
 
-  useQuery({
-    queryKey: ['test'],
-    initialData: catalog,
-    queryFn: fetcher,
-    onSuccess(data) {
-      catalog.value = data
+  //* actions
+  const { error, isLoading, isReady } = useAsyncState(
+    fetcher(URL),
+    catalogInitialState,
+    {
+      onSuccess: (data) => (catalogState.value = data),
+      delay: 1500,
     },
-    refetchOnWindowFocus: false,
-  })
+  )
 
-  return { catalog }
+  return {
+    catalogState,
+    error,
+    isLoading,
+    isReady,
+  }
 })
